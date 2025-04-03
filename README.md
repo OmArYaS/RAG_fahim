@@ -19,3 +19,18 @@ $ conda create -n mini-rag-fahim python=3.8
 ```bash
 $ conda activate mini-rag-fahim
 ```
+## Installation
+### install required package:
+
+```bash
+$ pip install -r requirements.txt  
+```
+### setup environment variables
+```bash
+$ cp .env.example .env
+```
+set your environment variables `.env` file like `OPENAI_API_KEY` value
+### run server
+```bash
+$ uvicorn main:app --reload --port 2000
+```
